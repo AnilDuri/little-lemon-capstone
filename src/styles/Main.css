@@ -1,0 +1,225 @@
+:root {
+    --primary-dark: #495E57;
+    --primary-light: #F4CE14;
+    --secondary1: #EE9972;
+    --secondary2: #FBDABB;
+    --secondary3: #EDEFEE;
+    --secondary4: #333333;
+    --regular-tex: 40pt;
+}
+.hero-container {
+    background-color: var(--primary-dark);
+    align-items: center;
+}
+.desc-container {
+    display: flex;
+    padding: 40px 0px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-wrap: wrap;
+
+}
+.left {
+    width: 80%;
+}
+.left h1 {
+    color: var(--primary-light);
+}
+.right {
+    min-width: 13rem;
+    min-height: 12rem;
+    display: flex;
+    background-color: #EDEFEE;
+    border-radius: 30px;
+    position: absolute;
+    top: 7rem;
+    left: 68%;
+}
+.right img {
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 30px;
+}
+
+.left h1, h2 {
+    line-height: 0.8;
+}
+
+.left p {
+    width:60%;
+    margin: 20px 0 35px 0;
+    font-weight: bold;
+}
+.btn {
+    padding: 15px 30px;
+    font-size: 16pt;
+    font-weight: 600;
+    background-color: var(--primary-light);
+    color: #333333;
+    border-radius: 20px;
+    border: none;
+}
+.specials-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 7% auto 2% auto;
+}
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex: 1;
+    background-color: var(--secondary3);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.desc-container .items {
+    display: flex;
+    flex-wrap: wrap;
+}
+.items {
+    display: flex;
+    flex-direction: column;
+}
+.items .order {
+    font-size: 16pt;
+    font-weight: 600;
+    color: #333333;
+    cursor: pointer;
+}
+.items p, i, .order{
+    padding: 20px;
+}
+.items .header {
+    padding: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.items .header span {
+    color: var(--secondary1);
+    font-size: 18pt;
+    font-weight: bold;
+}
+.items p {
+    margin-bottom: 50px;
+}
+.card-container img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.specials-bottom {
+    display: flex;
+    flex: 1;
+    width: 80%;
+    margin: 0 auto;
+    column-gap: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .card-container, .specials-bottom {
+        flex-direction: column;
+        min-width: 95%;
+        align-items: center;
+        justify-content: center;
+    }
+    .specials-bottom {
+        row-gap: 2rem;
+    }
+    .specials-top {
+        align-items: center;
+        justify-content: center;
+        min-width: 95%;
+
+    }
+    .right {
+        display: none;
+    }
+    .left {
+        min-width: 100%;
+        padding: 20px;
+    }
+}
+@media screen and (max-widt: 444) {
+    .desc-container {
+        min-height: 80vh;
+    }
+}
+@media screen and (max-width: 800px) {
+    .right {
+        display: none;
+    }
+    .about-container {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 1193px) {
+    .right {
+        top: 9rem;
+    }
+}
+
+.customers-say {
+    margin-top: 4rem;
+    background: var(--secondary3);
+    align-items: center;
+    padding: 2rem 0;
+}
+.customers-say h3 {
+    margin-left: auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.customers-say .testimonials {
+    width: 80%;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.testimonials .customers {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+}
+.customers .checked {
+    color: rgb(218, 196, 2);
+}
+.about-container {
+    width: 80%;
+    margin: 3rem auto;
+    display: flex;
+    align-items: center;
+}
+.about-container .about-right {
+    display: inline-flex;
+    margin-top: 100px;
+}
+.about-container .about-left {
+    flex: 1;
+}
+
+.formContainer {
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.formPage h2 {
+    text-align: center;
+}
+.formContainer input, select {
+    padding: 10px;
+}
+
+
